@@ -232,6 +232,9 @@ function roll(qr, sw, bonus) {
 	} else {
 		itemCount = 4;
 	}
+	if (rolldata.yvanon == true && bonus == false) {
+		itemCount = 4;
+	}
 	items = [];
 	while (itemCount > 0) {
 		var rarity = rng(1, 100); //determine rarity
